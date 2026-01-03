@@ -31,6 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initial calculation on page load
     calculateInvestment();
+    
+    // Set up scroll animations for cards
+    const cards = document.querySelectorAll('.benefit-card, .strategy-card, .step');
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
 });
 
 function calculateInvestment() {
@@ -91,13 +100,3 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe all strategy cards and benefit cards
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.benefit-card, .strategy-card, .step');
-    cards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(card);
-    });
-});
