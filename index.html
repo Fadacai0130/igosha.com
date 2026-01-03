@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igosha - Investing in the Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Igosha</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Investing in the Market Made Simple</h1>
+                <p>Your guide to building wealth through smart market investments</p>
+                <a href="#calculator" class="cta-button">Try Our Calculator</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Why Invest in the Market?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Growth Potential</h3>
+                        <p>Historically, the stock market has provided returns averaging 10% annually over the long term.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Passive Income</h3>
+                        <p>Earn dividends from stocks and interest from bonds while your investments grow.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Beat Inflation</h3>
+                        <p>Market investments typically outpace inflation, preserving and growing your purchasing power.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Diversification</h3>
+                        <p>Spread your investments across different assets to reduce risk and maximize returns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator" class="calculator">
+            <div class="container">
+                <h2>Investment Calculator</h2>
+                <p>Estimate your potential returns based on your investment strategy</p>
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="initial-investment">Initial Investment ($)</label>
+                        <input type="number" id="initial-investment" value="10000" min="0" step="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="monthly-contribution">Monthly Contribution ($)</label>
+                        <input type="number" id="monthly-contribution" value="500" min="0" step="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="years">Investment Period (Years)</label>
+                        <input type="number" id="years" value="10" min="1" max="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Expected Annual Return (%)</label>
+                        <input type="number" id="rate" value="8" min="0" max="30" step="0.5">
+                    </div>
+                    <button id="calculate-btn" class="cta-button">Calculate</button>
+                </div>
+                <div id="results" class="results">
+                    <div class="result-item">
+                        <h3>Total Contributions</h3>
+                        <p id="total-contributions">$0</p>
+                    </div>
+                    <div class="result-item">
+                        <h3>Total Interest Earned</h3>
+                        <p id="total-interest">$0</p>
+                    </div>
+                    <div class="result-item highlight">
+                        <h3>Final Balance</h3>
+                        <p id="final-balance">$0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="strategies" class="strategies">
+            <div class="container">
+                <h2>Investment Strategies</h2>
+                <div class="strategies-grid">
+                    <div class="strategy-card">
+                        <h3>Dollar-Cost Averaging</h3>
+                        <p>Invest a fixed amount regularly regardless of market conditions. This strategy reduces the impact of volatility and removes the need to time the market.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Buy and Hold</h3>
+                        <p>Purchase quality investments and hold them for the long term. This strategy capitalizes on compound growth and minimizes trading costs.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Index Fund Investing</h3>
+                        <p>Invest in funds that track market indices like the S&P 500. This provides broad diversification with low fees and minimal management.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Dividend Growth</h3>
+                        <p>Focus on stocks with a history of increasing dividends. This provides growing passive income and potential for capital appreciation.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Asset Allocation</h3>
+                        <p>Balance your portfolio across different asset classes based on your risk tolerance and time horizon. Rebalance periodically to maintain your target allocation.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h3>Value Investing</h3>
+                        <p>Look for undervalued stocks trading below their intrinsic value. This strategy requires research but can lead to significant returns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="getting-started">
+            <div class="container">
+                <h2>Getting Started</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Set Your Goals</h3>
+                        <p>Define your financial objectives, risk tolerance, and investment timeline.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Choose Your Account</h3>
+                        <p>Open a brokerage account, IRA, or 401(k) depending on your needs.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Research Investments</h3>
+                        <p>Study different investment options and choose those that align with your goals.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Start Investing</h3>
+                        <p>Begin with small amounts and increase as you gain confidence and knowledge.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <h3>Monitor & Adjust</h3>
+                        <p>Review your portfolio regularly and rebalance as needed to stay on track.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Igosha. All rights reserved.</p>
+            <p class="disclaimer">Disclaimer: This information is for educational purposes only and should not be considered financial advice. Always consult with a qualified financial advisor before making investment decisions.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
